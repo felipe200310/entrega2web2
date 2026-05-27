@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const generoController = require('../controllers/generoController');
-
+const { verificarToken, permitirRoles } = require('../middlewares/authMiddleware');
 const router = Router();
 
 /**

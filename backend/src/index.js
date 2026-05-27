@@ -24,6 +24,7 @@ app.use('/api/directores', require('./routes/directorRoute'));
 app.use('/api/productoras', require('./routes/productoraRoute'));
 app.use('/api/tipos', require('./routes/tipoRoute'));
 app.use('/api/medias', require('./routes/mediaRoute'));
+app.use('/api/auth', require('./routes/authRoute'));
 
 // Ruta de prueba inicial
 app.get('/health', (req, res) => {
